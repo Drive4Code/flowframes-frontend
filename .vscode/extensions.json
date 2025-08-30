@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "YoavBls.pretty-ts-errors",
+        "esbenp.prettier-vscode",
+        "wix.vscode-import-cost",
+        "bradlc.vscode-tailwindcss"
+    ]
+}

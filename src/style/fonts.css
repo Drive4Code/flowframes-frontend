@@ -1,0 +1,98 @@
+/* src/fonts.css */
+
+@font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 100 900;
+    src: url("/fonts/Outfit-VariableFont.woff2") format("woff2");
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/roboto/Roboto-Regular.woff2") format("woff2");
+   font-weight: 400; 
+   font-display: swap;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/roboto/Roboto-Medium.woff2") format("woff2");
+   font-weight: 500; 
+   font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/roboto/Roboto-Bold.woff2") format("woff2");
+   font-weight: 700; 
+   font-display: swap;
+}
+
+@font-face {
+    font-family: "DaysOne";
+    src: url("/fonts/DaysOne-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("/fonts/ubuntu/Ubuntu-Regular.woff2") format("woff2");
+    font-style: normal;
+   font-weight: 400; 
+}
+
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("/fonts/ubuntu/Ubuntu-Medium.woff2") format("woff2");
+    font-style: normal;
+   font-weight: 500; 
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url("/fonts/ubuntu/Ubuntu-Bold.woff2") format("woff2");
+    font-style: normal;
+   font-weight: 700; 
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("/fonts/ubuntu/Ubuntu-BoldItalic.woff2") format("woff2");
+    font-style: italic;
+   font-weight: 700; 
+}
+
+@font-face {
+    font-family: "Liberation";
+    src: url("/fonts/LiberationSans-Bold.woff2") format("woff2");
+    font-style: normal;
+   font-weight: 700; 
+}
+
+.font-liberation {
+    font-family: "Liberation";
+    font-weight: 700;
+}
+
+.font-ubuntu {
+    font-family: "Ubuntu";
+}
+
+.ubuntuItalicBold {
+    font-family: "Ubuntu";
+    font-weight: 700;
+   font-style: italic; 
+}
+
+
+.outfit-font {
+    font-family: "Outfit";
+}
+
+.work-sans {
+    font-family: "WorkSans";
+}
+
+.work-sans-bold {
+    font-family: "WorkSans", sans-serif;
+    font-variation-settings: 'whgt' 700;
+}

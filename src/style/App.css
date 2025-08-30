@@ -1,0 +1,146 @@
+@import-normalize;
+@import "tailwindcss";
+@plugin "../hero.ts";
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .scrollbar-hidden::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollbar-hidden {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+    }
+}
+
+.App {
+    text-align: center;
+}
+
+:root {
+    font-size: 68%;
+    --primary: rgb(44, 44, 52);
+    --secondary: rgb(36, 36, 41);
+    --tertiary: rgb(36, 36, 41);
+    font-family: "Liberation";
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    background-color: var(--primary);
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.5rem;
+}
+
+code {
+    font-family:
+        source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+main {
+    /* display: flex; */
+    position: relative;
+    align-items: center;
+    padding: 1rem;
+    width: 98%;
+}
+
+/* Input CSS */
+#input-link {
+    font-size: 1.6rem;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 40px white inset !important;
+}
+/* w-[50vw] h-[25vw] max-w-[50rem] max-h-[20rem] */
+#drag-ui {
+    height: 7vw;
+    width: 15vw;
+    min-width: 15rem;
+    min-height: 7rem;
+    transition: all 1.5s;
+}
+
+#drag-ui:hover {
+    height: 25vw;
+    width: 35vw;
+}
+/*  */
+
+/* Text Glow Effect */
+.glowing {
+    position: relative;
+    will-change: background-position, text-shadow;
+    /* font: bold 1 .5rem/1.4 'Arial'; */
+    /* letter-spacing: -0.1rem; */
+    white-space: nowrap;
+    background: linear-gradient(
+        90deg,
+        #fffcb5 0%,
+        #f5a223 30%,
+        #fffcb5 60%,
+        #f5a223 80%,
+        #fffcb5 100%
+    );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-font-smoothing: antialiased;
+    /* -webkit-text-stroke: 0.1px #000; */
+    color: transparent;
+    animation: bg-glow 3s linear 0s infinite;
+}
+
+@keyframes bg-glow {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow:
+            3px 3px 1px #000,
+            0 0 1rem #fc55;
+    }
+    to {
+        text-shadow:
+            3px 3px 1px #000,
+            0 0 1.7rem #fa29;
+    }
+}
+/* End GLOW */
+
+.preview {
+    animation: mkspace 1s ease-in-out;
+}
+
+@keyframes mkspace {
+    0% {
+        overflow: hidden;
+        margin-top: -100%;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+.text-danger {
+    color: #ea115c;
+}

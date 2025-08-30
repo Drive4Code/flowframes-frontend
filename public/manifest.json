@@ -1,0 +1,71 @@
+{
+  "short_name": "Flow Frames",
+  "name": "Flow Frames | Editing Redefined",
+  "icons": [
+  {
+    "src": "/app-icons/favicon.ico",
+    "sizes": "512x512",
+    "type": "image/x-icon"
+  },
+  {
+    "src": "/app-icons/icon-16px.png",
+    "sizes": "16x16",
+    "type": "image/png"
+  },
+  {
+    "src": "/app-icons/icon-32px.png",
+    "sizes": "32x32",
+    "type": "image/png"
+  },
+  {
+    "src": "/app-icons/icon-80px.png",
+    "sizes": "80x80",
+    "type": "image/png"
+  },
+  {
+    "src": "/app-icons/icon-152px.png",
+    "sizes": "152x152",
+    "type": "image/png"
+  },
+  {
+    "src": "/app-icons/icon-167px.png",
+    "sizes": "167x167",
+    "type": "image/png"
+  },
+  {
+    "src": "/app-icons/icon-180px.png",
+    "sizes": "180x180",
+    "type": "image/png"
+  },
+  {
+    "src": "/app-icons/icon-192px.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },
+  {
+    "src": "/app-icons/icon-512px.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+],
+  "start_url": ".",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "fullscreen",
+    "minimal-ui",
+    "window-controls-overlay"
+  ],
+  "theme_color": "#000000",
+  "background_color": "#2C2C34",
+  "orientation": "any",
+  "dir": "ltr",
+  "lang": "en",
+  "prefer_related_applications": false,
+  "categories": [
+    "business",
+    "productivity",
+    "social",
+    "utilities"
+  ]
+}
